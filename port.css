@@ -1,0 +1,157 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+}
+img{
+    width: 150px;
+    height: 150px;
+    border-radius: 50%;
+    border: 5px solid rgb(142, 53, 53);
+}
+.sidebar{
+    background-color: rgb(83, 190, 190);
+    position: fixed;
+    width: 20%;
+    height: 100%;
+    z-index: 1;
+    margin-top: 0px;
+    margin-left: 0px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.nav ul li a{
+    text-decoration: none;
+    font-size: 25px;
+    color: brown;
+    margin-top: 50px;
+    display: block;
+}
+.nav li{
+    list-style: none;
+    padding: 10px 20px;
+}
+ul li a:hover{
+    color: rgb(57, 57, 117);
+    font-weight: bold;
+}
+
+/*main content*/
+
+.person{
+    margin-left: 25%;
+    padding: 10%;
+    padding-left: 0%;
+}
+span{
+    color: aqua;
+}
+.name{
+    color:rgb(114,150,100);
+    font-size: 50px;
+    margin-bottom: .8%;
+
+}
+.address{
+    margin-bottom: 5%;
+}
+.lev{
+    font-size: 20px;
+    margin-bottom: 4%;
+}
+.icon {
+    font-size: 40px;
+}
+.fa-brands{
+    color: rgb(78, 78, 83);
+    margin-right: 2%;
+}
+
+/*EDUCATION*/
+
+.edu{
+    font-size: 2em;
+    font-weight: bold;
+    margin-bottom: 5%;
+}
+.course{
+    margin-bottom: 5%;
+
+}
+.heading{
+    color: rgb(50, 70, 58);
+    font-size: 2em;
+}
+.cou{
+    color: rgb(137, 49, 49);
+    font-size: 1.5em;
+}
+.percent{
+  color: rgb(49, 12, 12); 
+  font-size: 1em; 
+}
+
+/*SKILLS*/
+
+.ski{
+    font-size: 1.5em;
+    color: rgba(216, 66, 39, 0.888);
+    margin-bottom: 3%;
+}
+.skillicon{
+    font-size: 40px;
+    margin-right: 5%;
+    margin-bottom: 5%;
+}
+
+/*PROJECT*/
+
+.pro{
+    color: rgb(86, 121, 16);
+    font-size: 1.5em;
+    margin-bottom: 5%;
+    font-weight: bold;
+}
+.pr{
+    font-size: 1em;
+    padding-bottom: 3%;
+    color: rgb(99, 39, 49);
+}
+
+/*RESPONSIVE*/
+
+@media (max-width:480px){
+    .sidebar{
+        margin: 0;
+        padding: 0;
+        width: 100%;
+        height: auto;
+        position:static ;
+        top: 0;
+        left: 0;
+        }
+        .sidebar img {
+            display: none;
+
+        }
+        .sidebar .nav{
+            font-size: 30px;
+        }
+        .person{
+            margin-left: 0;
+            height: auto;
+            margin-top: 0;
+            width: 100%;
+            text-align: center;
+            padding: 20px 5px;
+        }
+        .per .name{
+            font-size: 30px;
+        }
+        .fa-brands{
+            margin-right: 9%;
+        }
+}
